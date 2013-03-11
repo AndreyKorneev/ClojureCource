@@ -26,6 +26,9 @@ class InputData {
  * sum(k=0..n) {fib(3*k} = (1/4) * [ fib(3n + 3) + fib(3n) - 2 ]
  *
  * Сложностью этого подхода является лишь вычисление n по заданному MAX_VALUE
+ * 
+ * Работает за O( log(3*n) ) в худшем случае.
+ * где n наибольшее из чисел k, которые удовлетворяют неравенству fib(3*k) <= MAX_VALUE
  */
 class AnaliticalFormula {
     static final Matrix FIB_START = new Matrix(new long[][] {new long[] {1L, 0L}}, 2);
