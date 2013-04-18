@@ -21,7 +21,7 @@ public class Task1 {
     public static PrintWriter out;
 
     public static void main(String[] args) {
-		out = new PrintWriter(System.out);
+	out = new PrintWriter(System.out);
         out.println(Simple.getAnswer(3000L));
         out.println(Simple.getAnswer(11000L));
         out.println(Simple.getAnswer(InputData.MAX_VALUE));
